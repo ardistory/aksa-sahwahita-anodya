@@ -3,7 +3,6 @@ import '../css/app.css';
 
 import { createRoot } from 'react-dom/client';
 import { createInertiaApp } from '@inertiajs/react';
-import '@fontsource/inter';
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 

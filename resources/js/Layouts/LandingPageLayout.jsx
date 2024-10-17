@@ -1,6 +1,7 @@
 import { Link } from '@inertiajs/react';
 import { CaretDown, IdentificationCard, MagnifyingGlass, SignOut, User } from '@phosphor-icons/react';
 import { Dropdown, Space, Typography } from 'antd';
+import Logo from '@/Assets/img/logo.png';
 
 export default function LandingPageLayout({ children, user }) {
     const items = [
@@ -38,10 +39,10 @@ export default function LandingPageLayout({ children, user }) {
 
     return (
         <>
-            <div className={'flex justify-between items-center py-4 px-10 bg-sky-300'}>
+            <div className={'flex justify-between items-center py-4 px-10 bg-cyan-500'}>
                 <div className={'flex gap-5 items-center'}>
                     <div className={'bg-white w-14 h-14 rounded-full flex items-center justify-center'}>
-                        <span className={'text-xs'}>Logo</span>
+                        <img src={Logo} alt="Aksa Sahwahita Anodya" />
                     </div>
                     <a href={'#'} className={'font-semibold text-xl'}>
                         PROFILE
@@ -93,8 +94,8 @@ export default function LandingPageLayout({ children, user }) {
             <main>
                 {children}
             </main>
-            <footer className={'w-full h-auto md:h-[240px] bg-sky-300 px-10 py-5 flex flex-col md:flex-row gap-5'}>
-                <div className={'max-w-80'}>
+            <footer className={'w-full h-auto md:h-[240px] bg-cyan-500 px-10 py-5 flex flex-col md:flex-row gap-5'}>
+                <div className={'max-w-full md:max-w-80'}>
                     <p className={'text-4xl font-bold'}>Contact Information</p>
                     <p>How to get in touch with us.</p>
                 </div>
@@ -108,7 +109,7 @@ export default function LandingPageLayout({ children, user }) {
                         <p>sahwahitafoundation@gmail.com</p>
                     </div>
                 </div>
-                <div className={'max-w-72'}>
+                <div className={'max-w-full md:max-w-72'}>
                     <p className={'font-semibold text-xl'}>Mailing Address</p>
                     <p>Jl. Siliwangi No. 15F Pondok Benda Rt 01 Rw 02 Pamulang - Tangerang Selatan 1541</p>
                 </div>

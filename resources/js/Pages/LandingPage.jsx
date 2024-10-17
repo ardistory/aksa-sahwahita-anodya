@@ -10,6 +10,7 @@ import 'swiper/css/effect-fade';
 import { CaretDown, CaretRight } from '@phosphor-icons/react';
 import { Button, Dropdown, Space, Typography } from 'antd';
 import LandingPageLayout from '@/Layouts/LandingPageLayout';
+import Logo from '@/Assets/img/logo.png';
 
 export default function LandingPage({ auth }) {
     const items = [
@@ -29,7 +30,9 @@ export default function LandingPage({ auth }) {
 
     return (
         <>
-            <Head title={'Home'} />
+            <Head title={'Home'}>
+                <link rel="shortcut icon" href={Logo} type="image/x-icon" />
+            </Head>
 
             <LandingPageLayout user={auth.user}>
                 <Swiper style={{
